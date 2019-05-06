@@ -1,0 +1,15 @@
+.\objects\peripheral.o: ..\peripheral.c
+.\objects\peripheral.o: ..\..\Project\peripheral.h
+.\objects\peripheral.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\peripheral.o: ..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\peripheral.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\peripheral.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\peripheral.o: ..\..\Project\stm32f10x_conf.h
+.\objects\peripheral.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
+.\objects\peripheral.o: ..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\peripheral.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\peripheral.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h
+.\objects\peripheral.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\peripheral.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
+.\objects\peripheral.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\objects\peripheral.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h

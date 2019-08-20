@@ -16,3 +16,4 @@
 .\objects\stm32f10x_it.o: ..\main.h
 .\objects\stm32f10x_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\stm32f10x_it.o: ..\user_delay.h
+.\objects\stm32f10x_it.o: ..\usart_config.h

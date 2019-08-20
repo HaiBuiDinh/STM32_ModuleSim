@@ -26,6 +26,7 @@
 #include "main.h"
 #include "stdio.h"
 #include "user_delay.h"
+#include "usart_config.h"
 
 // For store tick counts in us
 static __IO uint32_t usTicks;
@@ -153,7 +154,29 @@ void SysTick_Handler(void)
 /*  available peripheral interrupt handler's name please refer to the startup */
 /*  file (startup_stm32f10x_xx.s).                                            */
 /******************************************************************************/
+void USART1_IRQHandler(void)
+{
+	uint16_t data;
+  if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+  {
+		data = USART_ReceiveData(USART1);
+		if(USART_GetITStatus(USART2, USART_IT_TXE) == RESET)
+			USART_SendData(USART2,data);
+     
+  }
+}
 
+//void USART2_IRQHandler(void)
+//{
+//	uint16_t data;
+//  if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)
+//  {
+//		data = USART_ReceiveData(USART2);
+//		if(USART_GetITStatus(USART2, USART_IT_TXE) == RESET)
+//			USART_SendData(USART2,data);
+//     
+//  }
+//}
 /**
   * @brief  This function handles PPP interrupt request.
   * @param  None
